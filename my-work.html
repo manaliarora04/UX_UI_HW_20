@@ -12,15 +12,13 @@
 
   gtag('config', 'G-Q5YKX0DNT7');
 </script>
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <title>Manali Arora</title>
 </head>
 
 <body>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat:wght@400;500;600;700&family=Ms+Madi&family=Open+Sans:wght@300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat:wght@400;500;600;700&family=Ms+Madi&family=Open+Sans:wght@300&display=swap"
         rel="stylesheet">
     <header class="navigation">
         <div class="logo">
@@ -29,7 +27,7 @@
         <nav class="links">
             <ul class="menu">
                 <li><a href="about-me.html" class="menuItem">About</a></li>
-                <li><a href="my-work.html" class="menuItem">Work</a></li>
+                <li><a href="my-work.html" class="menuItem active">Work</a></li>
                 <li><a href="skills.html" class="menuItem">Skills</a></li>
                 <li><a href="https://www.linkedin.com/in/manali-arora/" class="menuItem">LinkedIn</a></li>
                 <li><a href="https://www.behance.net/manaliarora1" class="menuItem">Behance</a></li>
@@ -39,24 +37,46 @@
         <img src="images/menu.png" class="hamburger" />
         <img src="images/close.png" class="closeIcon" />
     </header>
+    <section class="main">
 
-    <div class="content">
-        <div class="intro">
-            <h1>Hi, I'm MANALI ARORA!</h1>
-            <h2>PRODUCT UX/UI DESIGNER . RESEARCHER .<br> CREATIVE THINKER . PROBLEM SOLVER <br><br></h2>
-            <a href="/docs/resume.pdf" download="Manali Arora Resume.pdf" class="resume">Download Resume</a>
-        </div>
-        <div class="profile-img">
-            <img onmouseover="javascript:imageHovered(this);" onmouseout="javascript:imageUnhovered(this);"
-                src="images/profile.png" class="heroImg" />
-        </div>
+        <div class="myWork">
+            <h1>PROJECTS/CASE STUDIES</h1>
+            <div>
+
+                <div class="flexContainer">
+                    <div class="caseStudy">
+                        <div class="caseStudyThumb">
+                            <img src="images/North-York-Harvest.png" />
+                        </div>
+                        <h3>NGO Website Redesigning</h3>
+                    </div>
+                    <div class="caseStudy">
+                        <div class="caseStudyThumb">
+                            <a href="index-case-study.html"><img src="images/Got-You.png" /></a>
+                        </div>
+                        <h3>GotYou Parental Control App</h3>
+                    </div>
+                    <div class="caseStudy">
+                        <div class="caseStudyThumb">
+                            <img src="images/CRA-Desktop-Homepage 4.png" />
+                        </div>
+                        <h3>Government Agency Web Redesigning</h3>
+                    </div>
+                    <div class="caseStudy">
+                        <div class="caseStudyThumb">
+                            <img src="images/Go-Fly.png" />
+                        </div>
+                        <h3>Go-Fy Travel App</h3>
+                    </div>
+
+                </div>
+            </div>
 
 
-    </div>
+    </section>
     <footer>
 
         <div class="logo">
-
             <a href="index.html"><img src="images/logo.png" /></a>
         </div>
 
@@ -86,5 +106,4 @@
 
 </body>
 <script src="js/index.js"></script>
-
 </html>

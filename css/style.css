@@ -1,60 +1,335 @@
+html,
 body {
-    font-family: 'Montserrat', sans-serif;
+  height: 100%;
 }
 
-.column {
-    padding: 60px;
-    background-color: #e5e5e5;
+body {
+
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("../images/backgroundImage.png");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
-.navbar-nav {
-    font-size: 20px;
+.main {
+  flex-grow: 2;
+  margin: 8px;
 }
 
-.display-4 {
-    font-size: 60;
-    font-weight: 500;
-    line-height: 1.2;
-    text-align: center;
-    margin-top: 10px;
+h2 {
+  font-size: 25px;
+  font-weight: 300;
 }
 
-.text h2 {
-    font-size: 50px;
-    font-weight: 800;
-    color: black;
-    text-align: center;
+h1 {
+  font-size: 50px;
+  font-weight: bold;
 }
 
-.text p {
-    font-size: 40;
-    text-align: center;
+.content {
+
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 50px;
 }
 
-button {
-   width:fit-content;
-
-}
-.column-white {
-display:flex;
-flex-direction: column;
-align-items: center;
-}
-    
-
-
-.footer-section > * {
-    position: relative;
-    top: 40%;
-    padding: 5px;
+.intro {
+  margin-bottom: 2rem;
 }
 
-.contact-icon {
-    margin-right: 8px;
+.navigation {
+  margin: 15px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 500px) {
-    .column {
-        width: 100%;
-    }
+
+/* .logo {
+        display: flex;
+        justify-content:left; 
+        
+         } */
+
+
+
+
+footer {
+
+  /*padding: 10px;*/
+  text-align: center;
+  /* Center text*/
+  background: #E5E5E5 60%;
+  /* Grey background */
+  opacity: 60%;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.text {
+  text-align: right;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.number {
+  text-align: right;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.resume {
+  background-color: #E5E5E5;
+  color: black;
+  padding: 15px 25px;
+  font-size: 18px;
+  margin: 50px 0px;
+}
+
+.profile-img {
+  overflow: hidden;
+}
+
+.rights {
+  height: 100%;
+  margin-top: 70px;
+}
+
+footer .contact a {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+footer .contact div:first-child {
+  margin-bottom: 10px;
+}
+
+.social-media {
+  display: flex;
+
+}
+
+.contact {
+  display: flex;
+
+
+
+}
+
+.footer-image {
+  height: 32px;
+  width: auto;
+  margin-right: 8px;
+}
+
+/*About me starts here */
+
+.about-me-img {
+  width: 547px;
+  height: auto;
+}
+
+.about-me p {
+  font-size: 28px;
+  font-weight: 200;
+  text-align: left;
+
+
+}
+
+.about-me {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/*Projects/case studies begins here*/
+
+.myWork {
+  text-align: center;
+}
+
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.caseStudy {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flexContainer .caseStudyThumb {
+  display: flex;
+  justify-content: center;
+}
+
+.flexContainer img {
+  height: 200px;
+  width: auto;
+}
+
+.caseStudy h3 {
+  margin-bottom: 50px;
+}
+
+
+
+/* My Skills starts here */
+
+.mySkills {
+  text-align: center;
+
+}
+
+.skillSet {
+  /*margin: 0px 5%;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 150;
+}
+
+/* .skillsGrid {
+    grid-template-columns: 1fr;
+  grid-template-rows: 300 300 300 300 300;
+ }  */
+
+.closeIcon, .hamburger {
+  display: none;
+}
+.links {
+  padding: 5px;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+
+}
+.links ul {
+  padding: 10;
+  list-style-type: none;
+  justify-content: right;
+  flex: 5px;
+}
+.links li {
+  text-align: right;
+  margin-left: 2rem;
+}
+.links a {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.menuItem {
+  border-bottom: 0.15rem solid transparent;
+}
+
+.menuItem:hover, .menuItem.active {
+  border-bottom: 0.15rem solid white;  
+}
+
+@media only screen and (min-width: 600px) {
+  .links ul {
+    display: flex;
+  }
+  .links li {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .flexContainer img {
+    width: 100%;
+  }
+
+  .skillSet {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .caseStudy {
+    width: 60%;
+  }
+
+  /* .links {
+    display: none;
+
+  } */
+
+  .hamburger {
+    height: 50px;
+    width: 50px;
+    display: block;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hamburger, .closeIcon {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+  }
+
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: -25px;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4.5rem;
+    width: fit-content;
+    padding-right: 3rem;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+  /*hover tabs */
+  /* .menuItem:hover {
+    background-color: azure;
+  }
+  .menuItem.active {
+    background-color: aliceblue;
+  } */
 }
